@@ -1,13 +1,6 @@
 <template>
-  <Nuxt />
+  <div>
+    <Nuxt class="center" style="min-height: 90vh" />
+    <Footer />
+  </div>
 </template>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  scroll-behavior: smooth;
-  background-color: #1f2639;
-}
-</style>

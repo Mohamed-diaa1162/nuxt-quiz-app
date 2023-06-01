@@ -1,0 +1,120 @@
+$main-color: #464646;
+$helper-color: #464646;
+$second-color: #bbbe64;
+$second-color-hover: #a4a755;
+$second-color-50: #a4a7558a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  background-color: $main-color;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+section {
+  border: 2px solid $second-color-50;
+  min-width: 80%;
+}
+
+.quiz {
+  padding: 10px;
+  color: white;
+
+  .orange {
+    color: $second-color;
+  }
+
+  .q {
+    font-size: 20px;
+  }
+
+  .list-group-item {
+    background-color: #e8e8ea;
+    color: black;
+    border-radius: 24px;
+    margin-bottom: 5px;
+
+    &:hover {
+      outline: 2px solid $second-color;
+      border-radius: 24px;
+    }
+  }
+
+  .active {
+    background-color: $second-color;
+    border: $second-color;
+    color: white;
+    margin-top: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .true {
+    background-color: green;
+    border: none;
+    margin-top: 0;
+    color: white;
+  }
+
+  .false {
+    background-color: #d40d0d;
+    border: none;
+    margin-top: 0;
+    color: white;
+  }
+
+  .answer {
+    border-radius: 50%;
+    border: 2px solid;
+    background-color: $second-color;
+    color: white;
+    padding: 7px;
+    margin-right: 10px;
+    box-shadow: 0px 2px 3px 0px silver;
+  }
+
+  .btn-custom {
+    color: #fff;
+    background-color: $second-color;
+    border-color: $second-color;
+
+    &:focus {
+      color: #fff;
+      background-color: $second-color;
+      border-color: $second-color;
+      box-shadow: 0 0 0 0.2rem $second-color;
+    }
+
+    &:hover {
+      background-color: $second-color-hover;
+    }
+  }
+}
+
+.main-color-text {
+  color: $second-color;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.main-text {
+  color: $second-color-hover;
+  font-weight: 700;
+}

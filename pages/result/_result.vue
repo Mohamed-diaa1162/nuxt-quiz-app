@@ -5,13 +5,26 @@
       <div class="card-body">
         <p class="card-text text-center">
           Your Result is
-          <span class="result">{{ this.$route.params.result }}</span>
-          <!-- <nuxt-link to=""></nuxt-link> -->
+          <span class="result">{{ result }}</span>
+          <br />
+          Thanks for Karim Abdel Aal <br />
+
+          <nuxt-link class="btn btn-success" to="/"> Go Home </nuxt-link>
         </p>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    result() {
+      return this.$route.params.result
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .card {

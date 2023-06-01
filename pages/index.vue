@@ -1,13 +1,18 @@
 <template>
   <div>
     <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
-      <div class="card-header text-center">Matlab Quiz</div>
+      <div class="card-header text-center">Chemistry Quiz</div>
       <div class="card-body">
-        <p class="card-text text-center">
+        <div class="card-text text-center">
           To Start Quiz
 
-          <nuxt-link class="btn btn-info" to="/quiz">Go</nuxt-link>
-        </p>
+          <p class="row">
+            <nuxt-link class="col btn btn-info m-1" to="/quiz">Start</nuxt-link>
+            <nuxt-link class="col btn btn-info m-1" to="/quiz?random=1">
+              Start With Random Order
+            </nuxt-link>
+          </p>
+        </div>
       </div>
     </div>
   </div>
