@@ -7,7 +7,7 @@
           Your Result is
           <span class="result">{{ result }}</span>
           <br />
-          Thanks for Karim Abdel Aal <br />
+          Thanks for Karim Abdel Aal & Mahmoud Hosney <br />
 
           <nuxt-link class="btn btn-success" to="/"> Go Home </nuxt-link>
         </p>

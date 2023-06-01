@@ -118,3 +118,21 @@ section {
   color: $second-color-hover;
   font-weight: 700;
 }
+
+.btn-custom {
+  color: #fff;
+  background-color: $second-color;
+  border-color: $second-color;
+
+  &:focus {
+    color: #fff;
+    background-color: $second-color;
+    border-color: $second-color;
+    box-shadow: 0 0 0 0.2rem $second-color;
+  }
+
+  &:hover {
+    background-color: $second-color-hover;
+    color: white;
+  }
+}
