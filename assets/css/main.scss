@@ -119,6 +119,24 @@ section {
   font-weight: 700;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
+.app-input {
+  border-radius: 24px;
+  border: 2px solid $second-color;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: white;
+  width: 5rem;
+  &:focus {
+    border-color: $second-color-hover;
+  }
+}
+
 .btn-custom {
   color: #fff;
   background-color: $second-color;

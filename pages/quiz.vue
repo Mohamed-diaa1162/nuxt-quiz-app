@@ -3,7 +3,20 @@
     <section class="quiz align-items-center">
       <div class="text-center">
         <h2>
-          Quiz : <span class="orange">{{ qNumber + 1 }} </span>/
+          Quiz :
+          <span v-if="showInput">
+            <input
+              v-model="questionNumber"
+              class="app-input"
+              type="number"
+              @keyup.enter="changeQuestion()"
+            />
+          </span>
+          <span v-else class="orange clickable" @dblclick="show()">
+            {{ qNumber + 1 }}
+          </span>
+          /
+
           {{ que.length }}
         </h2>
         <Counter />
@@ -64,7 +77,7 @@
 </template>
 
 <script>
-import { Que } from '~/assets/js/os.js'
+import { Que } from '~/assets/js/questions.js'
 export default {
   data() {
     return {
@@ -79,6 +92,8 @@ export default {
       result: '',
       mark: null,
       qNumber: 0,
+      showInput: false,
+      questionNumber: this.qNumber + 1,
     }
   },
   created() {
@@ -139,6 +154,22 @@ export default {
     },
     shuffle(array) {
       return array.sort(() => Math.random() - 0.5)
+    },
+    show() {
+      this.showInput = true
+    },
+    changeQuestion() {
+      this.qNumber = this.questionNumber - 1
+      this.showInput = false
+      this.questionNumber = this.qNumber + 1
+      const q1 = this.que[this.qNumber]
+
+      this.q = q1.q
+      this.a = q1.a
+      this.b = q1.b
+      this.c = q1.c
+      this.d = q1.d
+      this.result = q1.Answer
     },
   },
 }

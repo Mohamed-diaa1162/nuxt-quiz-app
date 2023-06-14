@@ -410,7 +410,7 @@ export const Que = [
         "b": "False",
         "c": "",
         "d": "",
-        "Answer": "a"
+        "Answer": "b"
     },
 
     {
@@ -976,7 +976,7 @@ export const Que = [
         "b": "The process of exchanging information between processes running on different computers or on the same computer",
         "c": "The process of managing secondary storage in a computer system",
         "d": "The process of reading or writing to files",
-        "Answer": "b"
+        "Answer": "d"
     },
 
 
@@ -1031,7 +1031,7 @@ export const Que = [
         "b": "A part of the system that causes malfunctioning",
         "c": "A part of the system that is not important",
         "d": "None of the above",
-        "Answer": "a"
+        "Answer": "b"
     },
 
 
